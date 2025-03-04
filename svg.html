@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG-Scalable Vector Graphics</title>
+    <style>
+        svg{
+            border: solid 1px green;
+        }
+    </style>
+</head>
+<body>
+    <p>Default svg 300*150</p>
+    <svg></svg> 
+    
+    <p>Custom svg 200*200</p>
+    <svg height="200" width="200">
+        <rect width="100" height="100" x="50" y="50" style="fill:green"></rect>
+        <rect width="100" height="100" x="75" y="75" style="fill:red;opacity:0.6"></rect>
+    </svg>
+    <p>circle</p>
+    <svg height="200" width="200">
+        <circle cx="100" cy="100" r="30" style="fill:red"></circle>
+        <circle cx="30" cy="30" r="10" style="fill: red"></circle>
+        <circle cx="170" cy="30" r="10" style="fill:red"></circle>
+        <circle cx="30" cy="170" r="10" style="fill:red"></circle>
+        <circle cx="175" cy="175" r="10" style="fill:red"></circle>
+        
+    </svg>
+     
+    <p>Line</p>
+    <svg height="200" width="200">
+        <line x1="0" y1="0" x2="200" y2="200" stroke="red"></line>
+        <line x1="100" y1="200" x2="100" y2="0" stroke="red"></line>
+        <line x1="0" y1="100" x2="200" y2="100" stroke="red"></line> 
+        <line x1="0" y1="200" x2="200" y2="0" stroke="red"></line>    
+    </svg>
+    <p>polygon</p>
+    <svg height="200" width="200">
+        <polygon points="0,0 200,0,100,100" stroke="red" fill="green"></polygon>
+        <polygon points="100,100,0,200,0,0" stroke="red" fill="red"></polygon>
+        <polygon points="0,200 200,200,100,100" stroke="red" fill="green"></polygon>
+        <polygon points="200,0 200,200,100,100" stroke="red" fill="red"></polygon>
+    </svg>
+    <p>Traffic signal</p>
+    <svg height="200" width="100" style="background-color:black";>
+    <circle cx="30" cy="30" r="15" style="background-color:red";>
+        <circle cx=""
+    </svg>
+
+  </body>
+  </html>

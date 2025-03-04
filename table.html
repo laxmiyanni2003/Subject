@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        #report{
+            width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        #report tr th{
+            background-color:blue;
+            color:yellow;
+        }
+        #report tr td{
+            text-align: center;
+            background-color:aqua;
+        }
+        tr:nth-child(even){background: green;}
+        tr:nth-child(odd){background:grey;}
+    </style>
+</head>
+<th>
+    <table border="1" id="report">
+        <tr><th colspan="4">Empolyee Information</th></tr>
+    <tr><th>SL no</th><th>name</th><th>Email</th><th>contact no</th></tr>
+    <tr><td>1</td><td>lacchi</td><td>lachi@123</td><td>123456</td></tr>
+    <tr><td>2</td><td>basu</td><td>basu@123</td><td>123456</td></tr>
+    <tr><td>3</td><td>appu</td><td>appu@123</td><td rowspan="2">123456</td></tr>
+    <tr><td>4</td><td>chini</td><td>chini@123</td><td></td></tr>
+    </table>
+</body>
+</html>

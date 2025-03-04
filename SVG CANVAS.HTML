@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canavs</title>
+    <style>
+        canvas
+        {
+            border:solid 1px  blue;
+        }
+    </style>
+</head>
+<body>
+     <p>Default canvas</p>
+    <canvas></canvas>
+    <p>Custom canvas(200*200)</p>
+    <canvas width="200" height="200" id="rect"></canvas>
+    <script>
+        var a=document.getElementById("rect");//targeting id
+        var b=a.getContext("2d");// 2 dimenstion
+        b.fillStyle="blue";// selecting background color
+        b.fillRect(50,50,100,100);//x,y,w,h
+        b.fill();//to fill background color
+
+        b.beginPath();
+        b.globalAlpha=0.5;
+        b.fillStyle="green";
+        b.fillRect(75,75,100,100);
+        b.fill();
+    </script>
+
+<p>Custom canvas(200*200)</p>
+<canvas width="200" height="200" id="circle"></canvas>
+<script>
+    var a=document.getElementById("circle");//targeting id
+    var b=a.getContext("2d");// 2 dimenstion
+    b.beginPath();
+    b.fillStyle="blue";// selecting background color
+    b.arc(100,100,40,0,2*3.142);//x,y,w,h
+    b.fill();//to fill background color
+</script>
+
+<p>Custom canvas(200*200)</p>
+<canvas width="200" height="200" id="line"></canvas>
+<script>
+    var a=document.getElementById("line");//targeting id
+    var b=a.getContext("2d");// 2 dimenstion
+    b.beginPath();
+    b.moveTo(0,0);
+    b.lineTo(200,200);
+   
+    b.moveTo(0,100);
+    b.lineTo(200,100);
+   
+    b.moveTo(100,200);
+    b.lineTo(100,0);
+   
+    b.moveTo(0,200);
+    b.lineTo(200,0);
+    
+    b.stroke();
+    b.beginPath();
+   
+   
+    b.arc(100,100,40,0,2*3.142);
+    b.fill();
+
+    b.stroke();
+
+    </script>
+    
+</body>
+</html>

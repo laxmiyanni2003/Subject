@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS Selector</title>
+    <style>
+        /*below is tagwise selector*/
+        h1
+        {
+            color:red;
+
+        }
+         /*below is id selector*/
+         #box{
+            height: 200px;
+            width : 200px;
+            background:yellow;
+            text-align:Left;
+            line-height:200px;
+            color:black;
+            font-size:30px;
+         }
+         .digisnare{
+            height: 200px;
+            width : 200px;
+            background:blue;
+            text-align:center;
+            line-height:200px;
+            color:white;
+            font-size:30px;
+         }
+          p,h3,.abc{
+            text-align:center;
+            text-decoration: overline;
+          } 
+          *{
+            margin:0px;
+          }
+    </style>
+</head>
+<body>
+    <h1>I am tagwise Selector</h1> <!--Example of tagwise selector-->
+    <div id="box">digisnare</div><!--Example of idselector-->
+    <div class="digisnare abc">digisnare</div><!--Example of classselector-->
+    <p>I am group selector</p>
+    <h4 class="abc">I am group selector</h4>
+</body>
+</html>
